@@ -1,3 +1,5 @@
+package main.java;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -10,8 +12,7 @@ public class UsoJSOUP {
         Elements newHeadlines1 = doc.select("div.CurrentConditions--phraseValue--2Z18W");
         Elements newHeadlines2 = doc.select("span.CurrentConditions--tempValue--3a50n");
 
-        System.out.println("Hoy está " + newHeadlines1 + "y hace"+ newHeadlines2 +". Datos extraídos de Vigo, España Pronóstico del tiempo y condiciones meteorológicas " +
-                "- The Weather Channel | Weather.com");
+        System.out.println("Hoy está " + newHeadlines1 + "y hace"+ newHeadlines2);
 
     }
 
